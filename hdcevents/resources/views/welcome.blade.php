@@ -42,13 +42,14 @@
         @php 
             $name = "Felipe";
             echo $name;
-        
-        for ($i = 0)
-        
-        
-        
         @endphp
-
+        
+        @for($i = 0; $i < count($arr); $i++)
+            <p>{{ $arr[$i]}} - {{$i}}</p>
+            @if ($i == 2)
+            <p>O i é = 2</p>
+            @endif
+        @endfor
         
     </body>
 </html>
